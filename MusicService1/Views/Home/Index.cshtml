@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+@using Microsoft.AspNetCore.Identity
+@using MusicService1.Models
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="text-center welc">
+        <h1 class="display-4 text-left">Welcome <span style="color:tomato">@User.Identity.Name</span>👋</h1>
+        <p class="text-xl-left" style="font-size:1.25rem">
+            This is the right place to relax and listen to music.
+            Rather register or login to enjoy a great time!
+        </p>
+    </div>
+}
+else
+{
+    <div class="text-center welc">
+        <h1 class="display-4 text-left">Welcome👋</h1>
+        <p class="text-xl-left" style="font-size:1.25rem">
+            This is the right place to relax and listen to music.
+            Rather register or login to enjoy a great time!
+        </p>
+    </div>
+}
+<div class="comment row">
+    <div class="cont-comm col-md-5" style="margin-top:50px">
+        <div>
+            <p class="text-xl-left txt-comm" style="font-size:1.1rem">
+                On this site I found my favorite songs. Also I was able to add my music here
+            </p>
+        </div>
+
+        <div>
+            <img src="~/img/user-1.jpg" class="img-comm" />
+            <p class="text-dark font-weight-bold text-md-center">Micle</p>
+        </div>
+
+    </div>
+    <div class="cont-comm col-md-5" style="margin-top:50px">
+        <div>
+            <p class="text-xl-left txt-comm" style="font-size:1.1rem">
+                A convenient site with a large selection!
+            </p>
+        </div>
+
+        <div>
+            <img src="~/img/user-2.png" class="img-comm" />
+            <p class="text-dark font-weight-bold text-md-center">Liza</p>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Roles list";
+}
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-info">Roles</h2>
+    </div>
+    <div class="col-6 text-right">
+        <a asp-action="Create" class="btn btn-danger">New Role</a>
+    </div>
+</div>
+<br />
+<div>
+    <table class="table table-striped border">
+        <tr class="table-info">
+            <th>Name</th>
+            <th>Control</th>  
+        </tr>
+        @foreach(var item in ViewBag.Roles)
+            {
+            <tr>
+                <td>@item.Name</td>
+                <td style="width: 15px">
+                    <div class="btn-group">
+                        <a asp-action="Edit" class="btn btn-sm btn-outline-primary">Edit</a>
+                        <a asp-action="Details" class="btn btn-sm btn-outline-success">Details</a>
+                        <a asp-action="Delete" class="btn btn-sm btn-outline-danger">Delete</a>
+                    </div>
+                </td>
+            </tr>
+            }
+    </table>
+</div>
+

@@ -1,0 +1,236 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #2b2b2b;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.comment {
+    padding-top: 4vh;
+    justify-content: space-around;
+}
+
+.cont-comm {
+    background-color: #F88671;
+    background: linear-gradient(-50deg, #F88671,#bf5d4b);
+    height: 250px;
+    display: flex;
+    padding: 15px;
+    border-radius: 45px;
+    vertical-align: central;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: 0;
+}
+
+    .cont-comm:hover {
+        box-shadow: 10px 10px #bf5d4b;
+    }
+
+.img-comm {
+    position: relative;
+    width: 160px;
+    height: auto;
+    border-radius: 50px;
+    padding-left: 2px;
+}
+
+.welc {
+    padding-top: 5vh;
+}
+
+.conatact {
+    padding-top: 5vh;
+    padding-left: 14vw;
+}
+
+.contact-us {
+    padding-top: 2vh;
+}
+
+    .contact-us input, textarea {
+        width: 100%;
+        color: #eee;
+        background: none;
+        border: none;
+        border-bottom: 1px solid tomato;
+        padding-top: 5px;
+    }
+
+.send-cont {
+    padding-top: 15vh;
+}
+
+    .send-cont input {
+        width: 100%;
+    }
+
+.contact-cont {
+    justify-content: space-around;
+}
+
+.txt-comm {
+    vertical-align: central;
+    padding-top: 5vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.song-frame-main{
+}
+.song-frame {
+    border-radius: 20px;
+    outline: none;
+    background-color: #393939;
+    text-align:center;
+    padding: 5px;
+    display:inline-block;
+    margin-left:10px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+    .song-frame:hover {
+        box-shadow: 1px 1px 5px #4a4949;
+    }
+.song-frame img {
+        height: 150px;
+        width: auto;
+        border-radius: 20px;
+}
+.song-frame audio{
+    width:95%;
+}
+.filter-song {
+    border: 2px solid #6C2B1F;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+    .filter-song:hover {
+        box-shadow: 3px 3px 3px #8b3434;
+    }
+.pag-item{
+    background: none;
+    transition: 0.4s;
+}
+.pag-item:hover {
+    background: tomato;
+    border-radius: 20px;
+}
+.pag-link{
+    
+    padding:6px;
+    color: tomato;
+}
+.pag-link:hover {
+    color: #eee;
+}
+.select-custom{
+    background: none;
+    color: #eee;
+    border: none;
+    transition:0.4s;
+}
+.select-custom:hover{
+    cursor:pointer;
+    color: tomato;
+}
+.link-song{
+    color: tomato;
+    transition: 0.4s;
+}
+.link-song:hover{
+     color: #eee;
+ }
+.create-song {
+    border-radius: 20px;
+    outline: none;
+    background-color: #393939;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+    margin-left: 10px;
+    transition: 0.4s;
+    margin-top: 10px;
+    position: relative;
+}
+    .create-song img {
+        height: 150px;
+        width: auto;
+        border-radius: 20px;
+    }
+    .create-song:hover {
+        box-shadow: 1px 1px 5px #4a4949;
+    }
+.song-frame-main-1 {
+    
+}

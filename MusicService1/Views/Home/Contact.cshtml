@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Contacts";
+}
+<div class="text-center welc">
+    <h1 class="display-4 text-left">@ViewData["Title"]📞</h1>
+</div>
+<div class="row conatact">
+    <div class="col-md-5">
+        <h3 style="text-decoration:underline; color:tomato">Our Contacts:</h3>
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+                <a class="nav-link text-light font-weight-bold">Email-1@gmail.com</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light font-weight-bold">Email-2@gmail.com</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-light font-weight-bold">+380 67*******</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light font-weight-bold">+380 97*********</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-5">
+        <h3 style="text-decoration: underline; color: tomato">Social Networks:</h3>
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+                <a class="nav-link text-light font-weight-bold">Instagram</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light font-weight-bold">Facebook</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-light font-weight-bold">Twitter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light font-weight-bold">YouTube</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<hr style="color:tomato; background-color:tomato" />
+<div class="row contact-cont">
+    <div class="col-md-4">
+        <h3 style="text-decoration:underline; padding-left:2vw">Contact us:</h3>
+        <div class="contact-us">
+            <div>
+                <label>Name:</label><br />
+                <input type="text" class="" required />
+            </div>
+
+            <div>
+                <label>E-mail:</label><br />
+                <input type="email" class="" required />
+            </div>
+
+            <div>
+                <label>Message:</label><br />
+                <textarea style="resize:none"></textarea>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-4 send-cont">
+        <input type="submit" value="Send" class="btn btn-outline-danger" />
+    </div>
+</div>

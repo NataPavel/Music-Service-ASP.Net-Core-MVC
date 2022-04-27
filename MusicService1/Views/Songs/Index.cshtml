@@ -1,0 +1,64 @@
+﻿@*model IEnumerable<MusicService1.Models.Song>*@
+@model MusicService1.ViewModels.FilterVm
+
+@addTagHelper *, MusicService1
+@{
+    ViewData["Title"] = "Songs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Songs🎵</h1>
+<form asp-controller="Songs" asp-action="Index" method="get">
+    <p>
+        Title: <input type="text" name="SearchString" style="background:none; border:none; border-bottom: 1px solid tomato; color: #eee"/>
+        <input type="submit" value="Search" class="btn btn-outline-danger"/>
+    </p>
+</form>
+<div class="row">
+    <div class="col-md-9 song-frame-main">
+        @foreach (var item in Model.Songs)
+        {
+        <div class="col-md-3 song-frame">
+            <h4> @item.Name</h4>
+            <h6 style="color:silver"> @item.Genre.SongType</h6>
+            <hr style="color:tomato; background-color:tomato" />
+            <img src="~/@item.Image" />
+            <hr style="color:tomato; background-color:tomato" />
+            <audio controls="controls">
+                <source src="~/audio/@item.Audio" type="audio/mp3" />
+            </audio>
+            <!--<button class="btn rounded-circle btn-outline-danger">+</button>-->
+            <hr style="color:tomato; background-color:tomato" />
+            <a asp-action="Details" asp-route-id="@item.Id" class="text-danger">Details</a> |
+            <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger">Delete</a>
+        </div>
+        }
+        <br />
+
+    </div>
+    <div class="col-md-3 filter-song">
+        <h3>Filters</h3>
+        <hr style="color:tomato; background-color:tomato" />
+        <form method="get">
+            <div class="form-group">
+                <label>Genres: </label>
+                <select name="gid" asp-items="Model.Genres" class="form-control select-custom"></select>
+            </div>
+            <!---->
+            <hr style="color:tomato; background-color:tomato" />
+            <p>
+                <input type="submit" value="Filter" class="btn btn-outline-danger rounded-pill"
+                       style="width:110px" />
+            </p>
+        </form>
+
+        <p>
+            <a asp-action="Create" class="btn btn-outline-danger rounded-pill">Create New</a>
+        </p>
+    </div>
+    <div style="margin-top: 15px; padding-left:20px">
+        <page-link page-view-model="Model.PageViewModel" page-action="Index"></page-link>
+    </div>
+    
+</div>
+
